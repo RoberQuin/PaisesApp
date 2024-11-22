@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { PaisModule } from './pais/pais.module';
 import { SharedModule } from './shared/shared.module';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,9 @@ import { RouterOutlet } from '@angular/router';
   imports: [
     PaisModule,
     SharedModule,
-    RouterOutlet
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
